@@ -52,7 +52,7 @@
       <Text fill="RED" layoutX="264.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" text="250.000 đ" textAlignment="CENTER" />
       <Text fill="RED" layoutX="416.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" text="35.000 đ" textAlignment="CENTER" />
       <Text fill="#f80000" layoutX="549.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" text="130.000 đ" />
-      <ImageView fitHeight="89.0" fitWidth="84.0" layoutX="13.0" layoutY="399.0">
+      <ImageView fitHeight="79.0" fitWidth="84.0" layoutX="13.0" layoutY="397.0">
          <image>
             <Image url="@../../Workspace/anhdanhangnhom3/soda.jpeg" />
          </image>
@@ -72,10 +72,20 @@
             <Image url="@../../Workspace/anhdanhangnhom3/nuocsting.jpeg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="89.0" fitWidth="108.0" layoutX="524.0" layoutY="407.0">
+      <ImageView fitHeight="72.0" fitWidth="99.0" layoutX="533.0" layoutY="408.0">
          <image>
             <Image url="@../../Workspace/anhdanhangnhom3/yen-mach-cosy-soco-80g-thumb-1.jpeg" />
          </image>
       </ImageView>
+      <Text layoutX="24.0" layoutY="493.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nước soda" textAlignment="CENTER" />
+      <Text layoutX="138.0" layoutY="493.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CocaCola" />
+      <Text layoutX="263.0" layoutY="493.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nước Aqua" />
+      <Text layoutX="548.0" layoutY="493.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bánh Cosy" />
+      <Text layoutX="410.0" layoutY="493.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sting vàng" textAlignment="CENTER" />
+      <Text fill="RED" layoutX="33.0" layoutY="511.0" strokeType="OUTSIDE" strokeWidth="0.0" text="70.00 đ" />
+      <Text fill="RED" layoutX="140.0" layoutY="511.0" strokeType="OUTSIDE" strokeWidth="0.0" text="90.000đ" />
+      <Text fill="#ff0707" layoutX="269.0" layoutY="511.0" strokeType="OUTSIDE" strokeWidth="0.0" text="50.000đ" />
+      <Text fill="#f50000" layoutX="414.0" layoutY="511.0" strokeType="OUTSIDE" strokeWidth="0.0" text="65.000đ" />
+      <Text fill="RED" layoutX="549.0" layoutY="514.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10.000đ" textAlignment="CENTER" wrappingWidth="57.9033203125" />
    </children>
 </Pane>
