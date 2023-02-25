@@ -5,7 +5,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 
 public class CheckDAO {
-    public class CheckDAO implements DAOInterface<SanPham> {
+
         private static CheckDAO instance;
         public Statement statement;
 
@@ -35,17 +35,14 @@ public class CheckDAO {
             return list;
         }
 
-        @Override
-        public ArrayList<SanPham> getALL() {
-            return null;
-        }
+
 
         public boolean create(SanPham sanPham) {
             try {
 
                 Database db = Database.getInstance();
                 Statement stt = db.getStatement();
-                String sql = "insert into lophoc(name,room) values('" + sanPham.getName() + "','" + sanPham.getGia() + "','" + sanPham.getMota() + "')";
+                String sql = "insert into sanpham(name,gia,mota) values('" + sanPham.getName() + "','" + sanPham.getGia() + "','" + sanPham.getMota() + "')";
                 if (stt.executeUpdate(sql) > 0) {
                     return true;
                 }
@@ -61,7 +58,7 @@ public class CheckDAO {
             try {
                 Database db = Database.getInstance();
                 Statement stt = db.getStatement();
-                String sql = " update sanpham  set name = '" + sanPham.getName() + "', room = '" + sanPham.getGia() + "','" + sanPham.getMota() + "' where id = " + sanPham.getId();
+                String sql = " update sanpham  set name = '" + sanPham.getName() + "', gia = '" + sanPham.getGia() + "',mota='" + sanPham.getMota() + "' where id = " + sanPham.getId();
                 if (stt.executeUpdate(sql) > 0) {
                     return true;
                 }
@@ -83,7 +80,7 @@ public class CheckDAO {
             return false;
         }
 
-        public String find(Integer id) {
+        public Check find(Integer id) {
             try {
                 Database db = Database.getInstance();
                 Statement stt = db.getStatement();
@@ -104,15 +101,13 @@ public class CheckDAO {
         }
 
         //generic method
-        public <N> SanPham findOne(N id) {//khi su dung gia tri truyen vao se  la kieu du lieu
-            return null;
-        }
 
-        public static CheckDAO getInstance() throws Exception {
+
+       private CheckDAO getInstance() throws Exception {
             if (instance == null) {
                 instance = new CheckDAO();
             }
-            return instance;
+            return null;
         }
 
         public Statement getStatement() {
@@ -120,4 +115,4 @@ public class CheckDAO {
             return statement;
         }
     }
-}
+

@@ -33,8 +33,7 @@ public class SanPhamController implements Initializable {
 
     public TableColumn<SanPham, Button> cAction;
     public TableView<SanPham> tbview;
-
-
+    public TableColumn cId;
 
 
     void clearInput(){
