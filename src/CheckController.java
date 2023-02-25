@@ -68,9 +68,9 @@ public class CheckController implements Initializable {
             cSdt.setCellValueFactory(new PropertyValueFactory<>("Sdt"));
             ObservableList <Check> list = FXCollections.observableArrayList();
             CheckDAO cd = new CheckDAO();
-            ArrayList<Check> dslh = cd.getAll();
+//            ArrayList<Check> dslh = cd.getAll();
 //        tbview.setItems(list);
-            tbView.getItems().addAll(dslh);
+//            tbView.getItems().addAll(dslh);
             tbView.refresh();
     }
 }
