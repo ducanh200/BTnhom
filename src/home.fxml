@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+
+
+<Pane fx:controller="HomeController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="712.0" layoutX="288.0">
+         <image>
+            <Image url="@nhom.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="#8f09cd" layoutX="33.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cửa hàng T3">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Text>
+      <Button onAction="#goToSanPham" layoutX="27.0" layoutY="107.0" mnemonicParsing="false" prefHeight="180.0" prefWidth="235.0" style="-fx-background-color: blue;" text="Sản phẩm">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Button>
+      <Button onAction="#goToKiemTra" layoutX="27.0" layoutY="347.0" mnemonicParsing="false" prefHeight="180.0" prefWidth="235.0" style="-fx-background-color: green;" text="Kiểmtra">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
